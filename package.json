@@ -4,7 +4,17 @@
   "description": "API para gerenciar pedidos das mesas de um restaurante",
   "main": "index.js",
   "scripts": {
+    "dev": "tsx watch src/server.ts"
   },
   "author": "Rodrigo Martins",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.12",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  }
 }
