@@ -1,10 +1,13 @@
 import { NextFunction, Request, Response} from "express"
 import { z } from "zod"
+import { knex } from "@/database/knex"
 
 class ProductsController {
   async index(request: Request, response: Response, next: NextFunction) {
     try{
-      return response.json({ message: "Ok"})
+      const products = await knex<ProductRepository>("products").select().orderBy("name")
+
+      return response.json(products)
     } catch (error) {
       next(error)
     }
@@ -18,6 +21,8 @@ class ProductsController {
       })
 
       const { name, price } = bodySchema.parse(request.body)
+
+      await knex<ProductRepository>("products").insert({name, price})
 
       return response.status(201).json({ name, price})
     } catch (error) {
