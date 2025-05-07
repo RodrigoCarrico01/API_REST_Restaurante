@@ -1,0 +1,873 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v11.0.2"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2025-05-07T14:10:16.679Z",
+				"time": 2.436,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3333/orders/table-session/4/total",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "25"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"19-68z4tYNL6kumEEniuhAxKf085FI\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 07 May 2025 14:06:25 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 25,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"total\":90,\"quantity\":3}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 2.436,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Show By Table Session "
+			},
+			{
+				"startedDateTime": "2025-05-07T14:10:16.679Z",
+				"time": 2.396,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3333/orders/table-session/4",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "373"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"175-hctORCOf7uHQDhVeafUa5c5PudY\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 07 May 2025 14:06:21 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 373,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":4,\"table_session_id\":4,\"product_id\":23,\"name\":\"Refrigerante 350ml\",\"price\":7.5,\"quantity\":2,\"total_price\":15,\"created_at\":\"2025-05-07 14:05:23\",\"updated_at\":\"2025-05-07 14:05:23\"},{\"id\":3,\"table_session_id\":4,\"product_id\":17,\"name\":\"Bolinho de mandioca\",\"price\":75,\"quantity\":1,\"total_price\":75,\"created_at\":\"2025-05-07 14:04:40\",\"updated_at\":\"2025-05-07 14:04:40\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 2.396,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Index By Table Session"
+			},
+			{
+				"startedDateTime": "2025-05-07T14:10:16.679Z",
+				"time": 19.262999999999998,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3333/orders",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"table_session_id\": 4,\n\t\"product_id\": 23,\n\t\"quantity\": 2\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 07 May 2025 14:05:23 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"name": "Content-Length",
+							"value": "0"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "application/json; charset=utf-8",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 19.262999999999998,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Create"
+			},
+			{
+				"startedDateTime": "2025-05-07T14:10:16.679Z",
+				"time": 2.806,
+				"request": {
+					"method": "PATCH",
+					"url": "http://localhost:3333/tables-sessions/4",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 400,
+					"statusText": "Bad Request",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "45"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"2d-QSHKGlpe2XHxxGhIJA5l1JsLCuc\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 07 May 2025 14:06:17 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 45,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"message\":\"Session table is already closed\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 2.806,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Close"
+			},
+			{
+				"startedDateTime": "2025-05-07T14:10:16.679Z",
+				"time": 2.597,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3333/tables-sessions",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "237"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"ed-wUhMNRyPNhP4+FZC1+qM6lQ4LX4\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 07 May 2025 13:55:45 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 237,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":1,\"table_id\":1,\"opened_at\":\"2025-05-06 10:33:25\",\"closed_at\":\"2025-05-06 10:57:32\"},{\"id\":2,\"table_id\":2,\"opened_at\":\"2025-05-06 10:46:53\",\"closed_at\":null},{\"id\":3,\"table_id\":3,\"opened_at\":\"2025-05-07 13:55:38\",\"closed_at\":null}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 2.597,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Index"
+			},
+			{
+				"startedDateTime": "2025-05-07T14:10:16.679Z",
+				"time": 2.919,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3333/tables-sessions",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"table_id\": 4\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 400,
+					"statusText": "Bad Request",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "34"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"22-F6QhZuRfKh3y6RyZvHYI0M/cmyY\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 07 May 2025 14:01:35 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 34,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"message\":\"Table already opened\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 2.919,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Open"
+			},
+			{
+				"startedDateTime": "2025-05-07T14:10:16.679Z",
+				"time": 27.222,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3333/tables",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "481"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"1e1-0syF3o/QE6WuIjE+ouvntgHEYo4\""
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 06 May 2025 10:34:00 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 481,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":1,\"table_number\":1,\"created_at\":\"2025-05-06 10:09:51\",\"updated_at\":\"2025-05-06 10:09:51\"},{\"id\":2,\"table_number\":2,\"created_at\":\"2025-05-06 10:09:51\",\"updated_at\":\"2025-05-06 10:09:51\"},{\"id\":3,\"table_number\":3,\"created_at\":\"2025-05-06 10:09:51\",\"updated_at\":\"2025-05-06 10:09:51\"},{\"id\":4,\"table_number\":4,\"created_at\":\"2025-05-06 10:09:51\",\"updated_at\":\"2025-05-06 10:09:51\"},{\"id\":5,\"table_number\":5,\"created_at\":\"2025-05-06 10:09:51\",\"updated_at\":\"2025-05-06 10:09:51\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 27.222,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Index"
+			},
+			{
+				"startedDateTime": "2025-05-07T14:10:16.679Z",
+				"time": 9.974,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:3333/products/25",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 07 May 2025 14:03:57 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"name": "Content-Length",
+							"value": "0"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "application/json; charset=utf-8",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 9.974,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Remove"
+			},
+			{
+				"startedDateTime": "2025-05-07T14:10:16.679Z",
+				"time": 12.033,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:3333/products/25",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"name\": \"Sorvete de morango\",\n\t\"price\": 15\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 07 May 2025 14:03:41 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"name": "Content-Length",
+							"value": "0"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "application/json; charset=utf-8",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 12.033,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Update"
+			},
+			{
+				"startedDateTime": "2025-05-07T14:10:16.679Z",
+				"time": 33.147999999999996,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3333/products",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"name\": \"Sorvete de chocolate\",\n\t\"price\": 15\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "42"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"2a-CSsjDjfBsbX246TQ4uz+K1PHSSA\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 07 May 2025 14:03:06 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 42,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"name\":\"Sorvete de chocolate\",\"price\":15}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 33.147999999999996,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Create"
+			},
+			{
+				"startedDateTime": "2025-05-07T14:10:16.679Z",
+				"time": 2.1519999999999997,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3333/products",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "1358"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"54e-sGyiR9xIxiLYmIU4GsnBKdupvcs\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 07 May 2025 14:04:05 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 1358,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":17,\"name\":\"Bolinho de mandioca\",\"price\":75,\"created_at\":\"2025-05-06 10:09:51\",\"updated_at\":\"2025-05-06 10:09:51\"},{\"id\":22,\"name\":\"Caldo de palmito\",\"price\":30,\"created_at\":\"2025-05-06 10:09:51\",\"updated_at\":\"2025-05-06 10:09:51\"},{\"id\":18,\"name\":\"Escondidinho de carne de sol\",\"price\":65,\"created_at\":\"2025-05-06 10:09:51\",\"updated_at\":\"2025-05-06 10:09:51\"},{\"id\":20,\"name\":\"Executivo de frango grelhado\",\"price\":36,\"created_at\":\"2025-05-06 10:09:51\",\"updated_at\":\"2025-05-06 10:09:51\"},{\"id\":21,\"name\":\"Executivo de tilápia grelhada\",\"price\":39,\"created_at\":\"2025-05-06 10:09:51\",\"updated_at\":\"2025-05-06 10:09:51\"},{\"id\":15,\"name\":\"Isca de frango\",\"price\":60,\"created_at\":\"2025-05-06 10:09:51\",\"updated_at\":\"2025-05-06 10:09:51\"},{\"id\":14,\"name\":\"Nhoque quatro queijos\",\"price\":45,\"created_at\":\"2025-05-06 10:09:51\",\"updated_at\":\"2025-05-06 10:09:51\"},{\"id\":19,\"name\":\"Porção de batatas fritas\",\"price\":40,\"created_at\":\"2025-05-06 10:09:51\",\"updated_at\":\"2025-05-06 10:09:51\"},{\"id\":23,\"name\":\"Refrigerante 350ml\",\"price\":7.5,\"created_at\":\"2025-05-06 10:09:51\",\"updated_at\":\"2025-05-06 10:09:51\"},{\"id\":24,\"name\":\"Suco de laranja 440ml\",\"price\":10,\"created_at\":\"2025-05-06 10:09:51\",\"updated_at\":\"2025-05-06 10:09:51\"},{\"id\":16,\"name\":\"Tilápia com alcaparras\",\"price\":100,\"created_at\":\"2025-05-06 10:09:51\",\"updated_at\":\"2025-05-06 10:09:51\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 2.1519999999999997,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Index"
+			}
+		]
+	}
+}
